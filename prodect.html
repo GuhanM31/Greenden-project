@@ -13,11 +13,34 @@
 </head>
 
 <body>
+    <!-- side navbar -->
+    <section id="sidenav" class="bg-green-500 fixed z-20 top-0 right-0 transition-all duration-1000"  style="width: 50%;height: 100vh; right: -50%;">
+
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+
+        <ul class="flex flex-col items-center gap-10 text-gray-600 ">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline  hover:text-black" href="prodect.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline   hover:text-black" href="contact.html">Contacts</a>
+            </li>
+        </ul>
+
+     </section>
+
+
+
     <!-- Responsive Navbar -->
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1>Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="size md:hidden" width="20px">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -39,73 +62,69 @@
     </nav>
 
 
-    <!-- search -->
-    <section class="text-center mt-9">
-        <h1 class="text-3xl font-bold text-center">Our Products</h1>
-        <input class="border border-black p-3 m-5 " style="width: 60%;" type="text"
-            placeholder="search for a Products..">
-
-    </section>
-
 
     <!-- Best seller -->
     <section class="p-4 text-center">
-        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
-            <div>
+        <h1 class="text-3xl font-bold text-center">Our Products</h1>
+        <input id="search" class="border border-black p-3 m-5 " style="width: 60%;" type="text"
+            placeholder="search for a Products..">
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div class="text-center">
                 <img src="./images/bestseller 1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="img">
                 <p>flower plant</p>
                 <p>$20</p>
             </div>
 
-            <div>
+            <div class="text-center">
                 <img src="./images/bestseller 2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="img">
-                <p>flower plant</p>
+                <p>lily plant</p>
                 <p>$20</p>
             </div>
 
-            <div>
+            <div class="text-center">
                 <img src="./images/bestseller 3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="img">
-                <p>flower plant</p>
+                <p>rose plant</p>
                 <p>$20</p>
             </div>
 
-            <div>
+            <div class="text-center">
                 <img src="./images/bestseller 4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="img">
-                <p>flower plant</p>
+                <p>sunflower plant</p>
                 <p>$20</p>
             </div>
 
-            <div>
+            <div class="text-center">
                 <img src="./images/bestseller 1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="img">
                 <p>flower plant</p>
                 <p>$20</p>
             </div>
 
-            <div>
+            <div class="text-center">
                 <img src="./images/bestseller 2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="img">
                 <p>flower plant</p>
                 <p>$20</p>
             </div>
 
-            <div>
+            <div class="text-center">
                 <img src="./images/bestseller 3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="img">
                 <p>flower plant</p>
                 <p>$20</p>
             </div>
 
-            <div>
+             <div class="text-center">
                 <img src="./images/bestseller 4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="img">
                 <p>flower plant</p>
                 <p>$20</p>
             </div>
+           
         </div>
 
 
@@ -121,6 +140,7 @@
     </section>
 
 
+    <script src="prodect.js"></script>
 
 </body>
 
